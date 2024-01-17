@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*::-moz-selection {
+  background-color: black;
+  color: #f16821;
+}
+*::selection {
+  background-color: black;
+  color: #f16821;
+}
+
+.cont {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1199px) {
+  .cont {
+    padding: 5%;
+  }
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 0;
+  z-index: 3;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header nav ul {
+  display: flex;
+  gap: 30px;
+}
+header .header nav ul li a {
+  font-family: "Mulish", sans-serif;
+  color: black;
+  transition: 0.3s;
+}
+header .header nav ul li a:hover {
+  color: #f16821;
+}
+
+#home {
+  margin-top: 100px;
+  background-image: url(../img/hero_2.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+#home .color {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#home .home {
+  padding: 200px 0;
+}
+#home .home .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+}
+#home .home .text h1 {
+  font-family: "Mulish", sans-serif;
+  color: white;
+  font-size: 5rem;
+}
+#home .home .text p {
+  font-family: "Mulish", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
+#home .home .text .buttons button {
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+#home .home .text .buttons button:hover {
+  background-color: white;
+  color: black;
+}
+#home .home .text .buttons button:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+#home .home .text .buttons button:nth-child(2):hover {
+  background-color: transparent;
+  color: white;
+}
+
+#our-products {
+  padding: 50px 0;
+}
+#our-products .our-products {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+}
+#our-products .our-products span {
+  max-width: 500px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+#our-products .our-products .products {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#our-products .our-products .products .product {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#our-products .our-products .products .product:hover img {
+  transform: scale(1.2);
+}
+#our-products .our-products .products .product .buttons {
+  display: flex;
+  gap: 20px;
+}
+#our-products .our-products .products .product .buttons button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+#our-products .our-products .products .product .buttons button:hover {
+  background-color: white;
+  color: black;
+}
+#our-products .our-products .products .product .buttons button:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+#our-products .our-products .products .product .buttons button:nth-child(2):hover {
+  background-color: black;
+  color: white;
+}
+#our-products .our-products .products .product a {
+  font-family: "Mulish", sans-serif;
+  color: black;
+  transition: 0.3s;
+}
+#our-products .our-products .products .product a:hover {
+  color: #f16821;
+}
+#our-products .our-products .products .product .img {
+  overflow: hidden;
+}
+#our-products .our-products .products .product .img img {
+  width: 100%;
+  transition: 0.3s;
+}
+#our-products .our-products .products .product p {
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+#our-products .our-products .products .product .icons {
+  display: flex;
+  gap: 20px;
+}
+#our-products .our-products .products .product .icons p {
+  display: flex;
+  gap: 5px;
+}
+#our-products .our-products .products .product .icons p .fa-star {
+  color: #f16821;
+}
+#our-products .our-products .products .product .icons p .fa-heart {
+  color: gray;
+  transition: 0.3s;
+}
+#our-products .our-products .products .product .icons p .fa-heart:hover {
+  color: red;
+}
+
+#products {
+  padding-top: 100px;
+}
+#products .products {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#products .products .product {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#products .products .product:hover img {
+  transform: scale(1.2);
+}
+#products .products .product .buttons {
+  display: flex;
+  gap: 20px;
+}
+#products .products .product .buttons button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+#products .products .product .buttons button:hover {
+  background-color: white;
+  color: black;
+}
+#products .products .product a {
+  font-family: "Mulish", sans-serif;
+  color: black;
+  transition: 0.3s;
+}
+#products .products .product a:hover {
+  color: #f16821;
+}
+#products .products .product .img {
+  overflow: hidden;
+}
+#products .products .product .img img {
+  width: 100%;
+  transition: 0.3s;
+}
+#products .products .product p {
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+#products .products .product .icons {
+  display: flex;
+  gap: 20px;
+}
+#products .products .product .icons p {
+  display: flex;
+  gap: 5px;
+}
+#products .products .product .icons p .fa-star {
+  color: #f16821;
+}
+#products .products .product .icons p .fa-heart {
+  color: gray;
+  transition: 0.3s;
+}
+#products .products .product .icons p .fa-heart:hover {
+  color: red;
+}
+
+#about-us {
+  padding: 50px 0;
+}
+#about-us .about-us {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+#about-us .about-us .left {
+  width: 60%;
+  font-family: "Mulish", sans-serif;
+  color: white;
+  position: relative;
+}
+#about-us .about-us .left img {
+  width: 100%;
+}
+#about-us .about-us .left .box {
+  font-size: 2rem;
+  background-color: aquamarine;
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 70%;
+  bottom: -20px;
+  right: -20px;
+}
+#about-us .about-us .right {
+  width: 40%;
+  max-width: 300px;
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+#about-us .about-us .right button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+#about-us .about-us .right button:hover {
+  background-color: white;
+  color: black;
+}
+
+#leadership {
+  padding: 50px 0;
+}
+#leadership .leadership {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+}
+#leadership .leadership .profilos {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#leadership .leadership .profilos .profil {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#leadership .leadership .profilos .profil span {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.85rem;
+}
+#leadership .leadership .profilos .profil img {
+  width: 70%;
+}
+#leadership .leadership .profilos .profil .icons {
+  display: flex;
+  gap: 10px;
+}
+#leadership .leadership .profilos .profil .icons i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: gray;
+  color: white;
+  transition: 0.3s;
+}
+#leadership .leadership .profilos .profil .icons i:hover {
+  background-color: black;
+}
+#leadership .leadership .profilos .profil p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */

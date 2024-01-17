@@ -1,0 +1,388 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	&::selection {
+		background-color: black;
+		color: #f16821;
+	}
+}
+
+$font: 'Mulish', sans-serif;
+$orange: #f16821;
+$aqua: aquamarine;
+.cont {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@media only screen and (max-width: 1199px) {
+		padding: 5%;
+	}
+}
+
+header {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 20px 0;
+	z-index: 3;
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		nav {
+			ul {
+				display: flex;
+				gap: 30px;
+				li {
+					a {
+						font-family: $font;
+						color: black;
+						transition: 0.3s;
+						&:hover {
+							color: $orange;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#home {
+	margin-top: 100px;
+	background-image: url(../img/hero_2.jpg);
+	background-position: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	.color {
+		background-color: rgba($color: black, $alpha: 0.4);
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+	.home {
+		padding: 200px 0;
+		.text {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			width: 100%;
+			position: relative;
+			h1 {
+				font-family: $font;
+				color: white;
+				font-size: 5rem;
+			}
+			p {
+				font-family: $font;
+				color: white;
+				font-size: 1.5rem;
+			}
+			.buttons {
+				button {
+					padding: 20px;
+					background-color: transparent;
+					color: white;
+					border: 2px solid white;
+					transition: 0.3s;
+					&:hover {
+						background-color: white;
+						color: black;
+					}
+					&:nth-child(2) {
+						background-color: white;
+						color: black;
+						&:hover {
+							background-color: transparent;
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#our-products {
+	padding: 50px 0;
+
+	.our-products {
+		padding: 30px 0;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		font-family: $font;
+		span {
+			max-width: 500px;
+			text-align: center;
+			color: rgba($color: #000000, $alpha: 0.7);
+		}
+
+		.products {
+			display: flex;
+			gap: 30px;
+			align-items: center;
+			.product {
+				width: 30%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 20px;
+				&:hover {
+					img {
+						transform: scale(1.2);
+					}
+				}
+				.buttons {
+					display: flex;
+					gap: 20px;
+					button {
+						padding: 10px;
+						background-color: black;
+						color: white;
+						border: 2px solid black;
+						transition: 0.3s;
+						&:hover {
+							background-color: white;
+							color: black;
+						}
+						&:nth-child(2) {
+							background-color: white;
+							color: black;
+							&:hover {
+								background-color: black;
+								color: white;
+							}
+						}
+					}
+				}
+				a {
+					font-family: $font;
+					color: black;
+					transition: 0.3s;
+					&:hover {
+						color: $orange;
+					}
+				}
+				.img {
+					overflow: hidden;
+					img {
+						width: 100%;
+						transition: 0.3s;
+					}
+				}
+				p {
+					font-family: $font;
+					text-align: center;
+					color: rgba($color: #000000, $alpha: 0.7);
+				}
+				.icons {
+					display: flex;
+					gap: 20px;
+					p {
+						display: flex;
+						gap: 5px;
+						.fa-star {
+							color: $orange;
+						}
+						.fa-heart {
+							color: gray;
+							transition: 0.3s;
+							&:hover {
+								color: red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#products {
+	padding-top: 100px;
+	.products {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+		.product {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+			&:hover {
+				img {
+					transform: scale(1.2);
+				}
+			}
+			.buttons {
+				display: flex;
+				gap: 20px;
+				button {
+					padding: 10px;
+					background-color: black;
+					color: white;
+					border: 2px solid black;
+					transition: 0.3s;
+					&:hover {
+						background-color: white;
+						color: black;
+					}
+				}
+			}
+			a {
+				font-family: $font;
+				color: black;
+				transition: 0.3s;
+				&:hover {
+					color: $orange;
+				}
+			}
+			.img {
+				overflow: hidden;
+				img {
+					width: 100%;
+					transition: 0.3s;
+				}
+			}
+			p {
+				font-family: $font;
+				text-align: center;
+				color: rgba($color: #000000, $alpha: 0.7);
+			}
+			.icons {
+				display: flex;
+				gap: 20px;
+				p {
+					display: flex;
+					gap: 5px;
+					.fa-star {
+						color: $orange;
+					}
+					.fa-heart {
+						color: gray;
+						transition: 0.3s;
+						&:hover {
+							color: red;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#about-us {
+	padding: 50px 0;
+	.about-us {
+		display: flex;
+		align-items: center;
+		gap: 70px;
+		.left {
+			width: 60%;
+			font-family: $font;
+			color: white;
+			position: relative;
+
+			img {
+				width: 100%;
+			}
+			.box {
+				font-size: 2rem;
+				background-color: $aqua;
+				padding: 20px;
+				gap: 10px;
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				width: 70%;
+				bottom: -20px;
+				right: -20px;
+			}
+		}
+		.right {
+			width: 40%;
+			max-width: 300px;
+			font-family: $font;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			align-items: flex-start;
+
+			button {
+				padding: 10px;
+				background-color: black;
+				color: white;
+				border: 2px solid black;
+				transition: 0.3s;
+				&:hover {
+					background-color: white;
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+#leadership {
+	padding: 50px 0;
+
+	.leadership {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		font-family: $font;
+		.profilos {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+			.profil {
+				width: 30%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 20px;
+				span {
+					color: rgba($color: #000000, $alpha: 0.4);
+					font-size: 0.85rem;
+				}
+				img {
+					width: 70%;
+				}
+				.icons {
+					display: flex;
+					gap: 10px;
+					i {
+						width: 30px;
+						height: 30px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background-color: gray;
+						color: white;
+						transition: 0.3s;
+						&:hover {
+							background-color: black;
+						}
+					}
+				}
+				p {
+					text-align: center;
+					color: rgba($color: #000000, $alpha: 0.6);
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
