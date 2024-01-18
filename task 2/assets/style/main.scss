@@ -1,0 +1,420 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none !important;
+	list-style: none;
+}
+
+.cont {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@media only screen and (max-width: 1199px) {
+		padding: 0 5%;
+	}
+}
+
+$yellow: #f1ba15;
+$gray: #8a8a8a;
+
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 4;
+	border-bottom: 1px solid white;
+
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.logo {
+			border-right: 1px solid white;
+			padding-right: 30px;
+			p {
+				color: white;
+				font-size: 3rem;
+				font-weight: 500;
+				span {
+					color: $yellow;
+				}
+			}
+		}
+		nav {
+			padding: 25px 0;
+			padding-right: 50px;
+
+			border-right: 1px solid white;
+
+			ul {
+				display: flex;
+				gap: 20px;
+				li {
+					a {
+						color: white;
+						font-weight: 300;
+						transition: 0.3s;
+						&:hover {
+							color: $yellow;
+						}
+					}
+				}
+			}
+		}
+		.contact {
+			display: flex;
+			p {
+				color: $yellow;
+				.fa-phone {
+					color: white;
+				}
+				span {
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+#home {
+	.home {
+		.boxes {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url('../img/slider-1.jpg');
+
+			&.boxes-2 {
+				background-image: url('../img/slider-2.jpg');
+			}
+			&.boxes-3 {
+				background-image: url('../img/slider-3.jpg');
+			}
+			.box {
+				display: flex;
+				flex-direction: column;
+				padding: 300px 0;
+				align-items: center;
+				p {
+					color: white;
+					font-size: 6rem;
+					font-weight: 500;
+					span {
+						color: $yellow;
+					}
+				}
+				.text {
+					p {
+						font-size: 1rem;
+						position: relative;
+						left: 200px;
+						bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+#welcome {
+	padding: 100px 0;
+	.welcome {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		.meat {
+			width: 5%;
+		}
+		.title {
+			font-size: 4rem;
+			display: flex;
+			gap: 10px;
+			margin-bottom: 40px;
+
+			.line {
+				color: $yellow;
+				position: relative;
+				font-size: 2rem;
+				top: 15px;
+			}
+		}
+
+		.text-boxes {
+			display: flex;
+			gap: 20px;
+			justify-content: space-between;
+			.text-box {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 30%;
+				p {
+					font-size: 2rem;
+				}
+				span {
+					color: $gray;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+#testimonials {
+	padding: 100px 0;
+
+	background-image: url(../img/review-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.testimonials {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		.fa-mug-hot {
+			color: white;
+			font-size: 4rem;
+		}
+		.title {
+			font-size: 4rem;
+			display: flex;
+			gap: 10px;
+			margin-bottom: 40px;
+
+			.line {
+				color: $yellow;
+				position: relative;
+				font-size: 2rem;
+				bottom: 10px;
+			}
+		}
+		p {
+			color: white;
+			font-size: 2rem;
+		}
+		#carouselExample {
+			max-width: 1000px;
+
+			p {
+				color: white;
+				text-align: center;
+				padding: 0 100px;
+				font-size: 1rem;
+				&.p {
+					color: white;
+					font-size: 2rem;
+				}
+				span {
+					color: $yellow;
+				}
+			}
+		}
+	}
+}
+
+#our-services {
+	padding: 100px 0;
+
+	.our-services {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		.title {
+			font-size: 4rem;
+			display: flex;
+			gap: 10px;
+			margin-bottom: 40px;
+			.line {
+				color: $yellow;
+				position: relative;
+				font-size: 2rem;
+				top: 10px;
+			}
+		}
+
+		.fa-menorah {
+			font-size: 4rem;
+		}
+
+		.contents {
+			display: flex;
+			gap: 40px;
+			justify-content: center;
+			flex-wrap: wrap;
+			.content {
+				width: 20%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				gap: 20px;
+				i {
+					color: $yellow;
+					font-size: 2rem;
+				}
+				p {
+					font-size: 2.5rem;
+				}
+				span {
+					color: $gray;
+					max-width: 300px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+#products {
+	padding: 100px 0;
+	background-image: url(../img/menu-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.products {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		.fa-menorah {
+			font-size: 4rem;
+		}
+		.title {
+			font-size: 4rem;
+			display: flex;
+			gap: 10px;
+
+			.line {
+				color: $yellow;
+				position: relative;
+				font-size: 2rem;
+				top: 10px;
+			}
+		}
+		.btn {
+			border: none;
+			color: white;
+			transition: 0.3s;
+			margin-bottom: 40px;
+
+			&:hover {
+				color: $yellow;
+			}
+		}
+		.card-boxes {
+			display: flex;
+			gap: 30px;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			.box {
+				p {
+					font-size: 2rem;
+				}
+				.text {
+					display: flex;
+					gap: 10px;
+					color: $gray;
+					.dots {
+						position: relative;
+						bottom: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	padding: 100px 0;
+	background-image: url(../img/footer-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.footer-top {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+
+		.title {
+			font-size: 4rem;
+			display: flex;
+			gap: 10px;
+			margin-bottom: 50px;
+			.line {
+				color: $yellow;
+				position: relative;
+				font-size: 2rem;
+				top: 10px;
+			}
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			width: 60%;
+			background-color: white;
+			padding: 20px;
+			align-items: center;
+			.inputs {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 10px;
+				width: 100%;
+
+				input {
+					width: 50%;
+					border: none;
+					background-color: #eff4f6;
+					padding: 20px;
+				}
+			}
+			textarea {
+				width: 100%;
+
+				padding: 20px;
+				border: none;
+				background-color: #eff4f6;
+			}
+			button {
+				width: 30%;
+				padding: 20px;
+				border: none;
+				background-color: #f1ba15;
+				color: white;
+				transition: 0.5s;
+				&:hover {
+					background-color: white;
+					color: $yellow;
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+		span {
+			color: $gray;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			a {
+				color: cyan;
+			}
+		}
+	}
+}

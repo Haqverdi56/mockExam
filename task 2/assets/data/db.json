@@ -1,0 +1,32 @@
+{
+	"menu": [
+		{
+			"id": "1",
+			"title": "Scrambled Eggs with ham",
+			"desc": "with wild mushrooms and asparagus",
+			"price": "9.00",
+			"category": "breakfast"
+		},
+		{
+			"id": "1",
+			"title": "aa Eggs with ham",
+			"desc": "with wild mushrooms and asparagus",
+			"price": "9.00",
+			"category": "brunch"
+		},
+		{
+			"id": "1",
+			"title": "cc Eggs with ham",
+			"desc": "with wild mushrooms and asparagus",
+			"price": "9.00",
+			"category": "lunch"
+		},
+		{
+			"id": "1",
+			"title": "vv Eggs with ham",
+			"desc": "with wild mushrooms and asparagus",
+			"price": "9.00",
+			"category": "dinner"
+		}
+	]
+}
